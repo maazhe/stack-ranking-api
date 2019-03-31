@@ -13,5 +13,5 @@ __pycache__/
 # log
 *.log
 
-#stack_ranking_api/config.py
+stack_ranking_api/config.py
 static/resources/logo.gif
