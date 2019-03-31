@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+
+#IDE
+.vscode
+/.idea
+
+# Environments
+.env
+.venv/
+
+# log
+*.log
+
+#stack_ranking_api/config.py
+static/resources/logo.gif

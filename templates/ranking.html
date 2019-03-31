@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Stack Overflow {{data.period}} ranking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="/static/css/stacksheet.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+  <div class="container">
+    <h1><img src="/static/resources/so_icon.svg"></img>{{data.period}} ranking<img src="static/resources/logo.gif"></img></h1>
+    <table class="table">
+      <thead class="th_head">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Pic</th>
+          <th scope="col">Name</th>
+          <th scope="col">Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% if data.period == 'overall' %}
+          {% extends "overall-ranking.html" %}
+        {% endif %}
+        {% if data.period == 'monthly' %}
+          {% extends "monthly-ranking.html" %}
+        {% endif %}
+      </tbody>
+    </table>
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

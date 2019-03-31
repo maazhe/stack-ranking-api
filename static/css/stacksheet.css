@@ -1,0 +1,31 @@
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.row{
+  margin-top: 100px;
+}
+
+h1 img {
+  width: 200px;
+  height: 200px;
+}
+
+.btn{
+  background-color: #F48023;
+  border: #F48023;
+}
+.btn:hover{
+  background-color: #f29954;
+  border: #f29954;
+}
+
+.th_head{
+  background-color: #F48023;
+}
+
+th, td {
+  text-align: center;
+  vertical-align: middle;
+}
